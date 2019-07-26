@@ -1,0 +1,93 @@
+body {
+    margin: 60px auto;
+    width: 70%;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+    font-size: 14px;
+    font-weight: 700
+}
+a:hover {
+    text-decoration: underline;
+}
+
+a.paper {
+    color: #1772d0;
+    text-decoration: none;
+}
+a.paper:focus,
+a.paper:hover {
+    color: #f09228;
+    text-decoration: none;
+}
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+.insetBorder {
+border: 10px inset;
+padding: 50px;
+}
+
+.roundedBorder {
+border: 2px solid yellowgreen;
+border-radius: 20px;
+padding: 10px;
+}
+
+.pinkBorder {
+border: 2px dashed pink;
+padding: 30px;
+}
+h2.c {
+    text-align: center;
+}
+p.sectiontitle{
+    font-size:18px;
+    width: 100%;
+    padding: 5px;
+    text-align:center;
+    background-color: #F8F8F8;
+    color: #333333;
+}
+div.container{
+    margin-top: 30px;
+}
+div.researchbox{
+    padding: 10px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #707070;
+}
