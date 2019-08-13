@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1462330-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1462330-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en-us" />
+    <meta name="Keywords" content="deep learning, neural network, physics, mathematics, stefano spigler"/>
+    <meta name="Description" content="Stefano Spigler"/>
+    <meta name="google-site-verification" content="f4krOzNmqimsC3u3eO3gFHONGAh3YlT8ynifAd3XzEI"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FAFAFA"/>
+    <link href="http://fonts.googleapis.com/css?family=Anonymous+Pro:700|Raleway:300|Open+Sans:400,700|Source+Sans+Pro:300,400" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="(min-width: 500px)" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" media="(max-width: 500px)" href="css/style_mobile.css" type="text/css"/>
+    <link rel="stylesheet" href="inc/font-awesome-4.2.0/css/font-awesome.min.css" type="text/css">
+    <link rel="icon" href="gfx/misc/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="inc/formalize/css/formalize.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="inc/functions.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        "HTML-CSS": {
+          fonts: ["TeX"],
+          scale: 90
+        },
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+      });
+    </script>
+    <script type="text/javascript" src="inc/MathJax-2.6/MathJax.js?config=TeX-AMS_HTML-full"></script>
+    <script type="text/javascript">
+      jQuery(window).load(function() {
+        jQuery('textarea').each(function () {
+          this.setAttribute('style', 'height: ' + (this.scrollHeight) + 'px; overflow-y: hidden;');
+        }).on('input', function () {
+          this.style.height = 'auto';
+          this.style.height = (this.scrollHeight) + 'px';
+        });
+      });
+    </script>
+    <title>./Stefano</title>
+  </head>
+  <body id="top">
+    <p id="notify"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>&emsp;<span id="notify_text"></span><a onclick="javascript: dismiss();">dismiss</a></p>
+<!--    <span id="toplink"><a onclick="javascript: scroll_to('top');" title="Back to top">(top)</a></span>-->
+
+    <main>
+      <div>
+        <span>./Stefano</span>
+        <a onclick="javascript: scroll_to('about');" title="About">about</a><a onclick="javascript: scroll_to('cv');" title="CV">curriculum</a><!--<a onclick="javascript: scroll_to('research');" title="Research">research</a>--><a onclick="javascript: scroll_to('contacts');" title="Contacts">contacts</a>
+      </div>
+
+      <div id="about">
+        <div id="photo"><span></span></div>
+        <!--<h2>Who I am</h2>-->
+        My name is Stefano Spigler. I am a postdoc in the Laboratory of Physics of Complex Systems at the École Polytechnique Fédérale de Lausanne (EPFL, Lausanne, Switzerland).
+        My funding comes from the <a href="http://scglass.uchicago.edu/" title="Simons Collaboration">Simons Collaboration</a> on <i>Cracking the glass problem</i>.<br/>
+        My current research focuses on the study of the loss landscape and of the learning dynamics in deep neural networks, as well as the asymptotic behavior of generalization
+        error for large networks or large datasets.<br/><br/><br/>
+        <span id="logos"></span>
+      </div>
+
+      <div id="cv">
+        <h1>Education &amp; academic positions</h1>
+        <h6>Download the full CV (<a href="files/cv.pdf" title="Download my cv" target="_black">pdf</a>)</h6>
+        <section>
+          <div>
+            <span>2017-<emph>2020</emph></span>
+            Postdoc<hr/>
+            <i>Eneergy landscape and learning dynamics in deep learning</i><br/>
+            <i>In collaboration with:</i> <emph>Matthieu Wyart &amp; Giulio Biroli</emph><hr/>
+            <emph><a href="http://pcsl.epfl.ch/" title="PCSL @ EPFL">Physics of Complex Systems Laboratory</a><br/>
+            École Polytechnique Fédérale de Lausanne</emph><hr/>
+<!--            <emph><a href="http://www.ipht.fr/" title="IPhT @ CEA">Institut de Physique Théorique</a><br/>
+            Commisariat à l'Energie Atomique</emph><hr/>-->
+          </div>
+          <div>
+            <span>2014-2017</span>
+            PhD in Physics<hr/>
+            <i>Distribution of avalanches in disordered systems</i><br/>
+            <i>Supervisor:</i> <emph>Silvio Franz</emph><hr/>
+            <emph><a href="http://lptms.u-psud.fr/en/" title="LPTMS">Laboratoire de Physique Théorique et Modèles Statistiques</a><br/>
+            Université Paris Sud (Université Paris-Saclay)</emph><hr/>
+            <i>Scholarship by the École Normale Supérieure</i><hr/>
+            <emph>You can read here my <a href="files/phd_thesis_spigler.pdf" title="Ph.D. thesis" target="_blank">Ph.D. thesis</a></emph>
+          </div>
+<!--          <div>
+            <span>2017</span>
+            Boulder School on frustrated and disordered systems (<a href="http://boulderschool.yale.edu/2017/boulder-school-2017" title="Boulder Summer School">link</a>)<hr/>
+            <i>Organizers:</i> <emph>Leo Radzihovsky, Patrick Charbonneau, Eric Corwin, Francesco Zamponi, Lenka Zdeborová</emph><br/>
+            <i>Topics:</i> <emph>Glasses, jamming, machine learning, neuroscience, random matrices</emph>
+        </div>
+          <div>
+            <span>2017</span>
+            Course on Intelligence économique &amp; stratégique (<a href="http://www.mines-paristech.fr/Agenda/Intelligence-economique-et-strategique/2127" title="IES at MINES ParisTech">link</a>)<hr/>
+            <i>Organizers:</i> <emph>MINES ParisTech</emph><br/>
+            <i>Topics:</i> <emph>Economic intelligence, strategy, lobbying, cyber security, patents</emph>
+          </div>
+          <div>
+            <span>2016</span>
+            Beg Rohu summer school (<a href="http://ipht.cea.fr/Meetings/BegRohu2016/" title="Beg Rohu Summer School">link</a>)<hr/>
+            <i>Organizers:</i> <emph>Giulio Biroli, Chiara Cammarota, Marco Tarzia</emph><br/>
+            <i>Topics:</i> <emph>Large deviations, machine learning, non-equilibrium statistical physics, non-perturbative renormalization group, Fisher KPP equation</emph>
+        </div>-->
+        <!--          <div>
+                    <span>2014</span>
+                    School on physics of complex systems <span style="font-weight: 100 !important;">(<a href="http://indico.ictp.it/event/a13200" title="Spring school on physics of complex systems">link</a>)</span><hr/>
+                    <i>Organizers:</i> <emph>ICTP, SISSA and partners of PCS master programme</emph><br/>
+                    <i>Topics:</i> <emph>non-equilibrium statistical mechanics, statistical processes, neuroscience, biophysics</emph>
+                </div>-->
+        </section>
+        <section>
+          <div>
+            <span>2012-2014</span>
+            Master in Physics of Complex Systems <span style="font-weight: 100 !important;">(<a href="http://areeweb.polito.it/didattica/pcs/" title="PCS">link</a>)</span><hr/>
+            <emph>Politecnico di Torino</emph>,
+            <emph>International School for Advanced Studies</emph>,
+            <emph>International Centre for Theoretical Physics</emph>,
+            <emph>Université Pierre et Marie Curie</emph>,
+            <emph>Université Paris Diderot</emph>,
+            <emph>Université Paris Sud</emph>,
+            <emph>École Normale Supérieure de Cachan</emph><hr/>
+            <i>Ranked 1st among all the participants</i><hr/>
+            <emph>You can read here my <a href="files/msc_thesis_spigler.pdf" title="M.Sc. thesis" target="_blank">M.Sc. thesis</a> done at the <emph><a href="http://lptms.u-psud.fr/en/" title="LPTMS">Laboratoire de Physique Théorique et Modèles Statistiques</a></emph> under the supervision of Silvio Franz
+          </div>
+          <div>
+            <span>2009-2012</span>
+            Scuola Galileiana di Studi Superiori (<a href="http://www.scuolagalileiana.unipd.it/en/" title="Scuola Galileiana di Studi Superiori">link</a>)</span> <i>(scholarship)</i>
+          </div>
+          <div>
+            <span>2009-2012</span>
+            Laurea in Physics (BSc)<hr/>
+            <emph><a href="http://www.unipd.it/en/" title="UniPD">Università degli Studi di Padova</a></emph>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <h1 class="center">Skills</h1>
+        <section>
+          <div>
+            <span>Languages</span>
+            <emph>Italian</emph><br/>
+            <emph>English</emph><br/>
+            <emph>French</emph><br/>
+            <emph>Swedish (<i>beginner</i>)</emph>
+          </div>
+        </section>
+        <section>
+          <div>
+            <span>Informatics</span>
+            <emph>Debian/Red Hat based linux distros</emph><br/>
+            <emph>C/C++, Python and Pytorch</emph><br/>
+            <emph>XML and derived languages (HTML), CSS, JavaScript (<i>basic</i>), PHP</emph><br/>
+            <emph>SQL (<i>basic</i>), Pandas, R (<i>basic</i>)</emph><br/>
+            <emph>Mathematica (<i>basic</i>), LaTeX, Office suite</emph><br/>
+          </div>
+        </section>
+      </div>
+
+<!--      <div id="research">
+        <h1>Research</h1>
+        <figure>
+          <span><img src="files/shear.png" alt="(hard spheres at jamming)"/></span>
+          <span><img src="files/yielding.png" alt="(yielding)"/></span>
+          <span><img src="files/ultrametrictree.png" alt="(ultrametric tree)"/></span>
+          <span><img src="files/nn.png" alt="(neural network)"/></span>
+          <figcaption>
+            <b>(a)</b> 1000 3d spheres at jamming, under shear.
+            <b>(b)</b> The system displays a jerky response when sheared; the moments of the non-linear elastic moduli have critical properties.
+            <b>(c)</b> The $\infty$-dimensional problem can be tackled via a RSB-based approach.
+            <b>(d)</b> A neural network with a very small number of nodes and layers.
+         </figcaption>
+        </figure>
+        <div>
+        Keywords: <b>disorderd systems</b>, <b>glass transition</b>, <b>jamming</b>, <b>avalanche statistics</b>, <b>replica symmetry breaking</b>, <b>neural networks</b>, <b>deep learning</b>.<br/><br/>
+        I had the chance to start working with the <a href="http://scglass.uchicago.edu/" title="Simons Collaboration">Simons Collaboration</a> on <i>Cracking the glass problem</i>
+        during my Ph.D., where I have studied the statistical physics of disordered systems, with focus on the glass transition in spin-
+        (<a href="https://arxiv.org/pdf/cond-mat/0505032.pdf" title="ArXiv: Spin-glass theory for pedestrians">link</a>)
+        and structural-glasses (<a href="https://arxiv.org/pdf/cond-mat/0607349.pdf" title="ArXiv: Theory of structural glasses and supercooled liquids">link</a>) and on the jamming transition
+        (<a href="http://www.physics.upenn.edu/liugroup/pubs/AnnuRevCMP.1.347.pdf" href="The jamming transition and the marginally jammed solid">link</a>) in random packings of spheres.<br/><br/>
+
+        In particular, I studied the statistics of the response of systems of hard spheres under a small shear-strain &mdash; figure (a);
+        such response is random (sample-dependent) and jerky (discontinuous) &mdash; figure (b). The distribution of the response can be
+        computed analytically in infinite dimensions via an approach based on the <abbr title="Replica Symmetry Breaking">RSB</abbr> theory &mdash; figure (c), &mdash;
+        and in this case it displays critical properties, namely a power-law behaviour. Remarkably, this mean-field prediction holds true in finite dimensions as well!
+        The details of my work can be found in my <a href="files/phd_thesis_spigler.pdf" title="Ph.D. thesis" target="_blank">Ph.D. thesis</a> and
+        <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.95.022139" title="PRE: Mean-field avalanches in jammed spheres">here</a>.<br/>
+
+        <hr/>
+
+        I have recently started a joint postdoc affiliated with the Simons Collaboration that takes place between the EPFL (Lausanne, Switzerland) and the CEA (Paris, France).
+        Now my research consists in studying the properties of the energy landscape and of the dynamics in deep neural networks.<br/><br/>
+
+        Neural networks are, loosely speaking, algorithms that are inspired by some features of the (visual) cortex of living animals. (<i>Supervised</i>) neural networks can be used to do inference on data;
+        one of the typical tasks that these algorithms can do is classification: a network can be <i>trained</i> on a set of pictures belonging to multiple categories, in such a way that when presented
+        with a new image there is a high chance that it will be able to correctly classify the category the image belongs to. Training is characterized as a process where some <i>error function</i>
+        is minimized, with respect to the parameters of the model; the error is defined as a measure of mismatch between the predicted category of a picture and the true one<br/><br/>
+
+        In order to achieve good results on complex datasets, these networks need to be fairly <i>deep</i> (millions of tunable parameters to be inferred). There are several reason to think
+        that the energy landscape, as a function of the parameters, is rough and complex, as one finds in disordered glassy systems, but it turns out that it might be much smoother.
+        The goal of my research is to characterize this landscape and the salient features of the dynamics that the system undergoes while <i>learning</i> (i.e. during training).
+        </div>
+    </div>-->
+
+      <div id="pubs">
+        <h1 class="center">Publications</h1>
+        <section>
+            <div>
+              <span>2019</span>
+              M. Geiger, S. Spigler, A. Jacot, M. Wyart<br/>
+              <i>Scaling description of generalization with number of parameters in deep learning</i><br/>
+              submitted to conference (on arXiv soon)<br/>
+            </div>
+            <div>
+              <span>2019</span>
+              S. Spigler, M. Geiger, M. Wyart<br/>
+              <i>Asymptotic learning curves of kernel methods: empirical data v.s. Teacher-Student paradigm</i><br/>
+              submitted to conference (<a href="https://arxiv.org/abs/1905.10843" title="Article link">arXiv preprint</a>)<br/>
+            </div>
+          <div>
+            <span>2019</span>
+            M. Geiger, A. Jacot, S. Spigler, F. Gabriel, L. Sagun, S. d'Ascoli, G. Biroli, C. Hongler, M. Wyart<br/>
+            <i>Scaling description of generalization with number of parameters in deep learning</i><br/>
+            to be submitted (<a href="https://arxiv.org/abs/1901.01608" title="Article link">arXiv preprint</a>)<br/>
+          </div>
+          <div>
+            <span>2018</span>
+            S. Spigler, M. Geiger, S. d'Ascoli, L. Sagun, M. Baity-Jesi, G. Biroli, M. Wyart<br/>
+            <i>A jamming transition from under- to over-parametrization affects loss landscape and generalization</i><br/>
+            NeurIPS 2018 workshop "Integration of Deep Learning Theories" (<a href="https://arxiv.org/abs/1810.09665" title="Article link">arXiv preprint</a>)<br/>
+          </div>
+      </section>
+        <section>
+          <div>
+            <span>2018</span>
+            M. Geiger, S. Spigler, S. d'Ascoli, L. Sagun, M. Baity-Jesi, G. Biroli, M. Wyart<br/>
+            <i>The jamming transition as a paradigm to understand the loss landscape of deep neural networks</i><br/>
+            PR E, to be published (<a href="https://arxiv.org/abs/1809.09349" title="Article link">arXiv preprint</a>)<br/>
+          </div>
+          <div>
+            <span>2018</span>
+            M. Baity-Jesi, L. Sagun, M. Geiger, S. Spigler, G.B. Arous, C. Cammarota, Y. LeCun, M. Wyart, G. Biroli<br/>
+            <i>Comparing dynamics:  deep neural networks versus glassy systems</i><br/>
+            ICML, PMLR 80:314-323 (<a href="http://proceedings.mlr.press/v80/baity-jesi18a.html" title="Article link">PMLR</a>)<br/>
+          </div>
+          <div>
+            <span>2017</span>
+            S. Franz, S. Spigler<br/>
+            <i>Mean-field avalanches in jammed spheres</i><br/>
+            Phys. Rev. E 95(2), 022139 (<a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.95.022139" title="Article link">PR E</a>)<br/>
+          </div>
+          <div>
+            <span>2016</span>
+            S. Franz, G. Gradenigo, S. Spigler<br/>
+            <i>Random-diluted triangular plaquette model: Study of phase transitions in a kinetically constrained model</i><br/>
+            Phys. Rev. E 93(3), 032601 (<a href="http://link.aps.org/doi/10.1103/PhysRevE.93.032601" title="Article link">PR E</a>)<br/>
+          </div>
+        </section>
+      </div>
+
+      <div id="contacts">
+        <h1>Contact me</h1>
+        <iframe frameborder="0" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2745.3402776721173!2d6.570210415275218!3d46.52116797031511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c31000e09677b%3A0x4a65cc13bfd83732!2sEPFL-UNIL+Cubotron!5e0!3m2!1sen!2sch!4v1519051705522" allowfullscreen></iframe>
+        <section>
+          You can contact me via <a title="Email" href="mailto:stefano.spigler@epfl.fr">email</a>.<br/><br/>
+          <!--Other places where you can find me are:<br/>
+          <a title="Google Scholar" href="https://scholar.google.it/citations?user=YDKPDkgAAAAJ&hl=en">google scholar</a>,
+          <a title="LinkedIn" href="https://www.linkedin.com/in/stefanospigler">linkedin</a>,
+          <a title="BitBucket" href="https://bitbucket.org/vonspigler/">bitbucket</a>,
+          <a title="BitBucket" href="https://github.com/vonspigler/">github</a>.-->
+        </section>
+      </div>
+
+      <div id="footer">
+        <table>
+          <tr>
+            <td>
+              Physics of Complex Systems Laboratory<br/><br/>
+              Office BSP 512 (EPFL-UNIL Cubotron)<br/>
+            </td>
+            <td>
+              Stefano Spigler &copy; 2017<br/><br/>
+              <a href="mailto:stefano.spigler@epfl.ch" title="Email">stefano.spigler@epfl.ch</a><br/>
+              +41 21 69 30469
+            </td>
+            <td>
+              EPFL SB IPHYS PCSL<br/>
+              Rte de la Sorge<br/>
+              CH-1015 Lausanne<br/>
+              Switzerland<br/>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

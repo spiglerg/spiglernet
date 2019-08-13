@@ -1,0 +1,430 @@
+@font-face {
+  font-family: latex;
+  src: url("../fonts/CMSerif/cmunrm.woff"); }
+@font-face {
+  font-family: font_cursive;
+  src: url("../fonts/cursive.ttf"); }
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 0;
+  table-layout: fixed;
+  vertical-align: middle;
+  empty-cells: show;
+  width: 100%;
+  height: 100%; }
+
+a {
+  cursor: pointer; }
+
+hr {
+  border: none;
+  border-top: 1px solid #CCCCCC;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.4vw;
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 0;
+  font-weight: normal;
+  margin: 0 0 2em 0; }
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.4vw;
+  text-align: center;
+  display: block;
+  font-weight: normal;
+  padding: 0 0 0.5em 0;
+  margin: 0 0 1.5em 17vw;
+  width: 33.1vw;
+  border-bottom: 1px solid #AAA; }
+
+h6 {
+  font-size: 1.2vw;
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 1vw 0;
+  font-weight: normal;
+  margin: -5vw 0 2vw 0 !important; }
+
+abbr {
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 700;
+  font-size: 1.38vw;
+  border-bottom: 3px dotted #E04050;
+  text-decoration: none; }
+
+#notify {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  width: 21.5vw;
+  height: 10.7vw;
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid #E04050;
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px #888;
+  left: 39.3vw;
+  top: calc(50vh - 6.4vw);
+  text-align: center;
+  padding-top: 4vw;
+  display: block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2vw;
+  line-height: 1.4vw; }
+  #notify > a {
+    color: #E04050;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    position: absolute;
+    display: block;
+    right: 1.07vw;
+    bottom: 0.7vw; }
+
+html {
+  height: 100%;
+  background-color: #203045;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10vw; }
+
+div {
+  padding: 0;
+  margin: 0;
+  overflow: hidden !important; }
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  min-width: calc(500px - 2*$MARGINWIDTH);
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: transparent; }
+  body > #toplink {
+    z-index: 10;
+    position: fixed;
+    right: -8.9vw;
+    width: 14.3vw;
+    bottom: 3.6vw;
+    height: 2.1vw;
+    transform: rotate(90deg);
+    text-align: center;
+    color: #E04050 !important;
+    font-weight: 700;
+    font-size: 1.2vw;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    border-bottom: none;
+    display: block;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s; }
+    body > #toplink:link, body > #toplink:visited {
+      color: inherit; }
+    body > #toplink > a {
+      display: block;
+      width: 4.3vw;
+      height: 2.1vw;
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -ms-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s; }
+      body > #toplink > a:hover {
+        background-color: #E04050;
+        color: #FFF; }
+  body > main > div {
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease-in-out 0s;
+    -moz-transition: opacity 0.4s ease-in-out 0s;
+    -ms-transition: opacity 0.4s ease-in-out 0s;
+    -o-transition: opacity 0.4s ease-in-out 0s;
+    transition: opacity 0.4s ease-in-out 0s;
+    overflow: auto;
+    background-color: transparent;
+    border: none;
+    min-height: 22vw;
+    width: 100%;
+    text-align: justify;
+    min-width: calc(500px - 2*$MARGINWIDTH);
+    padding: 5.7vw 7.1vw;
+    font-weight: 400;
+    font-size: 1.0vw;
+    line-height: 2vw;
+    font-family: 'Open Sans', sans-serif; }
+    body > main > div:nth-of-type(2n+1) {
+      background-color: #FFF; }
+    body > main > div:nth-of-type(2n) {
+      background-color: #FAFAFA; }
+    body > main > div a {
+      color: #E04050 !important;
+      font-weight: 400;
+      text-decoration: none;
+      border-bottom: 2px solid #E04050; }
+      body > main > div a:link, body > main > div a:visited {
+        color: inherit; }
+    body > main > div > section:nth-of-type(2n+1) {
+      width: 50%;
+      float: left;
+      padding-right: 1vw;
+      text-align: left !important; }
+    body > main > div > section:nth-of-type(2n) {
+      width: 50%;
+      float: right;
+      padding-left: 1vw;
+      text-align: left !important; }
+    body > main > div > section > div {
+      font-size: 1.15vw;
+      line-height: 1.67vw;
+      font-family: 'Source Sans Pro', sans-serif;
+      padding: 2.5vw 0; }
+      body > main > div > section > div > span:first-child {
+        display: block;
+        box-sizing: content-box;
+        margin-bottom: 0.8vw;
+        border-bottom: 0.3vw solid #E04050;
+        overflow: visible; }
+      body > main > div > section > div hr {
+        border: none;
+        margin: 0.7vw;
+        padding: 0; }
+      body > main > div > section > div emph {
+        color: #444;
+        font-weight: 300; }
+      body > main > div > section > div i {
+        font-weight: 300; }
+      body > main > div > section > div a {
+        text-decoration: none;
+        border-bottom: 1px solid #E04050 !important;
+        font-weight: 400 !important; }
+    body > main > div:nth-last-of-type(2) {
+      border-radius: 0 0 0.5vw 0.5vw; }
+    body > main > div:nth-last-of-type(1) {
+      height: 10vw !important;
+      min-height: 10vw !important;
+      padding: 0 !important;
+      overflow: hidden;
+      margin: 6vw 0 10vw 0 !important;
+      border-radius: 0.5vw;
+      text-align: center;
+      line-height: 1.4;
+      color: #888; }
+      body > main > div:nth-last-of-type(1) a {
+        font-weight: 400;
+        border: none; }
+      body > main > div:nth-last-of-type(1) table, body > main > div:nth-last-of-type(1) tr {
+        padding: 0;
+        margin: 0 3vw;
+        width: calc(100% - 6vw); }
+      body > main > div:nth-last-of-type(1) td {
+        font-family: "Raleway" !important;
+        font-size: 0.95vw !important;
+        font-weight: 300;
+        padding: 0;
+        width: 100%; }
+        body > main > div:nth-last-of-type(1) td:nth-of-type(1) {
+          text-align: left; }
+        body > main > div:nth-last-of-type(1) td:nth-of-type(2) {
+          text-align: center; }
+        body > main > div:nth-last-of-type(1) td:nth-of-type(3) {
+          text-align: right; }
+    body > main > div:nth-of-type(1) {
+      border-radius: 0.5vw 0.5vw 0 0;
+      height: 10vw !important;
+      min-height: 10vw !important;
+      background-color: #FFF;
+      color: #000;
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: center; }
+      body > main > div:nth-of-type(1) > span {
+        position: absolute;
+        right: 12vw;
+        top: 13.5vw;
+        background-color: inherit;
+        display: block;
+        text-align: right;
+        font-size: 2.46vw;
+        line-height: 3vw;
+        font-family: 'Anonymous Pro', monospace;
+        font-weight: bold; }
+      body > main > div:nth-of-type(1) > a {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 1.4vw !important;
+        line-height: calc(10.5/1.4) !important;
+        padding: 0 !important;
+        margin: 0 1vw !important;
+        color: #E04050;
+        text-decoration: none;
+        border: none;
+        border-sizing: content-box; }
+    body > main > div:nth-of-type(2) > h1 {
+      text-align: center;
+      padding-right: 24vw; }
+    body > main > div table td {
+      font-size: 1.1vw;
+      font-family: 'Source Sans Pro', sans-serif;
+      padding-left: 1.4vw; }
+
+body > main > div#about {
+  padding: 5.7vw 15vw; }
+  body > main > div#about #logos {
+    background: url("../files/logos.png") 0 0 no-repeat;
+    background-size: 15vw 5.5vw;
+    width: 15vw;
+    height: 5.5vw;
+    margin: 4vw auto 4vw auto;
+    display: block; }
+  body > main > div#about > #photo {
+    float: left;
+    display: block;
+    background: #000000 url("../files/me.gif") no-repeat scroll 50% 0;
+    background-size: cover;
+    border: 2px solid #FFF;
+    width: 14vw;
+    height: 18.5vw;
+    margin-right: 3vw;
+    margin-bottom: 1.5vw; }
+    body > main > div#about > #photo > span {
+      background-color: #2C2C2C;
+      opacity: 0.85;
+      color: #F6F6F6;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      font-size: 0.8vw;
+      display: none;
+      height: 7vw;
+      margin-top: calc(11.5vw - 4px);
+      padding: 0.3vw 3.5vw 0 3.5vw; }
+    body > main > div#about > #photo h1 {
+      font-family: font_cursive;
+      font-size: 2.5vw;
+      white-space: nowrap;
+      line-height: 1.07vw;
+      padding: 0;
+      padding-top: 0px;
+      margin: 1vw 0 0 -1.8vw;
+      font-weight: normal;
+      color: #FFF;
+      transform: skew(-10deg, 2deg);
+      text-shadow: 1px 1px 3px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+body > main > div#research {
+  padding: 5.7vw 7.1vw 5.7vw 30.1vw;
+  counter-reset: figuresresearch; }
+  body > main > div#research > hr {
+    border: 1px solid #DDD;
+    padding: 0;
+    margin: 4vw auto;
+    height: 0;
+    line-height: 0;
+    width: 10vw; }
+  body > main > div#research figure {
+    width: 20vw;
+    overflow: hidden;
+    float: left;
+    margin: -8vw 0 0 -23vw !important;
+    padding: 0 !important; }
+    body > main > div#research figure > span {
+      display: block; }
+      body > main > div#research figure > span:after {
+        display: block;
+        position: relative;
+        left: 2.5vw;
+        top: 0;
+        width: 2.5vw;
+        height: 2.5vw;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #FFF;
+        font-size: 0.8vw;
+        line-height: 2;
+        font-weight: bold;
+        margin: -2.5vw 0 0 -2.5vw;
+        counter-increment: figuresresearch;
+        content: "(" counter(figuresresearch,lower-alpha) ")"; }
+      body > main > div#research figure > span > img {
+        display: block;
+        padding: 0 !important;
+        margin: 0.5vw 0 !important;
+        width: 100%;
+        border: none; }
+    body > main > div#research figure > figcaption {
+      position: relative;
+      width: 100%;
+      margin: 2.5vw 0;
+      font-size: 1.05vw;
+      line-height: 1.6vw;
+      font-weight: 300;
+      font-family: 'Source Sans Pro', sans-serif; }
+
+body > main > div#contacts {
+  height: calc(100vh - 26vw) !important;
+  max-height: 30vw;
+  padding: 0 !important; }
+  body > main > div#contacts > iframe {
+    display: block;
+    float: left;
+    height: calc(100vh - 26vw) !important;
+    max-height: 30vw;
+    min-height: 22vw;
+    width: 40vw;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important; }
+  body > main > div#contacts > h1 {
+    display: inline-block;
+    position: relative;
+    left: 10vw;
+    width: 20vw;
+    text-align: center;
+    top: 3.5vw; }
+  body > main > div#contacts > section {
+    display: inline-block;
+    position: relative;
+    left: 5vw;
+    width: 29vw;
+    top: 2vw; }
+  body > main > div#contacts input {
+    border-radius: 0;
+    border: 1px solid #AAA;
+    border-bottom: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    height: 2.2vw;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.1vw !important; }
+  body > main > div#contacts textarea {
+    border: 1px solid #AAA;
+    border-bottom: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    width: 100%;
+    min-height: 8vw;
+    max-height: 14vw;
+    margin-top: 0.7vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2vw;
+    resize: none; }
+
+/*# sourceMappingURL=style.css.map */
