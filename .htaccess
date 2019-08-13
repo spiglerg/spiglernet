@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^sub.domain.com
+RewriteRule ^(.*)$ http://domain.com/subdomains/sub/$1 [L,NC,QSA]
