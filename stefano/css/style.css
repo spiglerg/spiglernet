@@ -292,8 +292,8 @@ body > main > div#about {
   padding: 5.7vw 15vw; }
   body > main > div#about #logos {
     background: url("../files/logos.png") 0 0 no-repeat;
-    background-size: 15vw 5.5vw;
-    width: 15vw;
+    background-size: 10vw 5.5vw;
+    width: 10vw;
     height: 5.5vw;
     margin: 4vw auto 4vw auto;
     display: block; }
