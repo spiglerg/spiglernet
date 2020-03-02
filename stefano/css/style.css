@@ -288,14 +288,15 @@ body {
       font-family: 'Source Sans Pro', sans-serif;
       padding-left: 1.4vw; }
 
-body > main > div #logos {
+body > main > div#logos {
+  padding: 0; }
+body > main > div#logos #sponsor {
   background: url("../files/logos.png") 0 0 no-repeat;
   background-size: 10vw 5.5vw;
   width: 10vw;
   height: 5.5vw;
-  margin: 0vw auto 0vw auto;
+  margin: 0.5vw auto 0.5vw auto;
   display: block; }
-
 
 body > main > div#about {
   padding: 5.7vw 15vw; }
