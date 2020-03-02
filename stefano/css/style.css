@@ -289,13 +289,14 @@ body {
       padding-left: 1.4vw; }
 
 body > main > div#logos {
+  min-height: 0;
   padding: 0; }
 body > main > div#logos #sponsor {
   background: url("../files/logos.png") 0 0 no-repeat;
   background-size: 10vw 5.5vw;
   width: 10vw;
   height: 5.5vw;
-  margin: 0.5vw auto 0.5vw auto;
+  margin: 1vw auto 1vw auto;
   display: block; }
 
 body > main > div#about {
