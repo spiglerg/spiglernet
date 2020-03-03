@@ -48,13 +48,13 @@
     <title>./Stefano</title>
   </head>
   <body id="top">
-    <p id="notify"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>&emsp;<span id="notify_text"></span><a onclick="javascript: dismiss();">dismiss</a></p>
+<!--    <p id="notify"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>&emsp;<span id="notify_text"></span><a onclick="javascript: dismiss();">dismiss</a></p>-->
 <!--    <span id="toplink"><a onclick="javascript: scroll_to('top');" title="Back to top">(top)</a></span>-->
 
     <main>
       <div>
         <span>./Stefano</span>
-        <a onclick="javascript: scroll_to('about');" title="About">about</a><a onclick="javascript: scroll_to('talks');" title="Main talks">slides</a><a onclick="javascript: scroll_to('cv');" title="CV">curriculum</a><!--<a onclick="javascript: scroll_to('research');" title="Research">research</a>--><a onclick="javascript: scroll_to('contacts');" title="Contacts">contacts</a>
+        <a onclick="javascript: scroll_to('about');" title="About">about</a><a onclick="javascript: scroll_to('cv');" title="CV">curriculum</a><!--<a onclick="javascript: scroll_to('research');" title="Research">research</a>--><a onclick="javascript: scroll_to('contacts');" title="Contacts">contacts</a><a onclick="javascript: scroll_to('pubs');" title="Publications">publications</a><a onclick="javascript: scroll_to('talks');" title="Main talks">slides</a>
       </div>
 
       <div id="about">
@@ -64,26 +64,10 @@
         I am funded by the <a href="http://scglass.uchicago.edu/" title="Simons Collaboration">Simons Collaboration</a> on <i>Cracking the glass problem</i>.<br/>
         My current research focuses on the study of the learning dynamics and generalization performance of deep neural networks.
         As a statistical physicist, I study the behavior of deep networks in the limit of <i>(i)</i> very wide (overparametrized) networks, and <i>(ii)</i> in the limit of large training sets (mostly on kernels).<br/><br/><br/>
-      </div>
-
-      <div id="logos">
+      
         <span id="sponsor"></span>
       </div>
-
-      <div id="talks">
-        <h1>Main talks and presentations</h1>
-        <ul>
-          <li>
-            <a href="files/jamming-deep-learning.pdf" title="Slides on jamming in deep networks" target="_blank">Slides</a>: Jamming transition in deep networks. Good performance of overparametrized networks. Double descent in generalization error. Fluctuations and ensemble averaging.<br/><br/>
-
-            <div style='text-align: center; margin: 0 auto'>
-              <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style='width:24vw; height:18vw;' type="text/html" src="https://www.youtube.com/embed/uKYrU2LNGZY?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"></iframe>
-            </div><br/>
-          </li>
-          <li><a href="files/kernel-methods-and-the-curse-of-dimensionality.pdf" title="Slides on kernel methods" target="_blank">Slides</a>: Learning curves of kernel methods. Curse of dimensionality? Performance on real data. Teacher-Student kernel regression. Effective dimension and smoothness of real data. RKHS assumption. Dimensionality reduction due to task invariance for kernel regression and classification.</li>
-        </ul>
-      </div>
-
+ 
       <div id="cv">
         <h1>Education &amp; academic positions</h1>
         <h6>Download the full CV (<a href="files/cv.pdf" title="Download my cv" target="_black">pdf</a>)</h6>
@@ -286,6 +270,21 @@
           </div>
         </section>
       </div>
+
+      <div id="talks">
+        <h1>Main talks and presentations</h1>
+        <ul>
+          <li>
+            <a href="files/jamming-deep-learning.pdf" title="Slides on jamming in deep networks" target="_blank">Slides</a>: Jamming transition in deep networks. Good performance of overparametrized networks. Double descent in generalization error. Fluctuations and ensemble averaging.<br/><br/>
+
+            <div style='text-align: center; margin: 0 auto'>
+              <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style='width:24vw; height:18vw;' type="text/html" src="https://www.youtube.com/embed/uKYrU2LNGZY?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"></iframe>
+            </div><br/>
+          </li>
+          <li><a href="files/kernel-methods-and-the-curse-of-dimensionality.pdf" title="Slides on kernel methods" target="_blank">Slides</a>: Learning curves of kernel methods. Curse of dimensionality? Performance on real data. Teacher-Student kernel regression. Effective dimension and smoothness of real data. RKHS assumption. Dimensionality reduction due to task invariance for kernel regression and classification.</li>
+        </ul>
+      </div>
+
 
       <div id="contacts">
         <h1>Contact me</h1>
