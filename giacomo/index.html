@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<title>Giacomo Spigler</title>
-		<meta name="description" content="Giacomo Spigler's personal website">
+		<meta name="description" content="Giacomo Spigler, robot learning researcher at Tilburg University: active perception, imitation learning and reinforcement learning for humanoid robots.">
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8"/>
         <meta http-equiv="Content-Language" content="en-us" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="keywords" content="deep learning, artificial intelligence, deep reinforcement learning, vision-language-action (VLA) models, continual learning, meta-learning, artificial general intelligence, cortical modelling, computational neuroscience, temporal singularity">
+		<meta name="keywords" content="robot learning, imitation learning, active vision, deep reinforcement learning, vision-language-action models, humanoid robots, Reachy 2, TAVIS, Tilburg University">
 		<meta name="author" content="Giacomo Spigler">
 
         <link rel="shortcut icon" href="images/logo.png" type="image/x-icon"/>
@@ -20,7 +20,7 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-	
+
 	  gtag('config', 'G-41HE0Z4Q0S');
 	</script>
 
@@ -43,28 +43,40 @@
             <h1 id="giacomo-spigler">Giacomo Spigler</h1>
 
             <p class="intro">
-				I am an Assistant Professor at the <a href="https://www.tilburguniversity.edu/about/schools/tshd/departments/dis">Department of Intelligent Systems</a> at Tilburg University, with a focus on AI for Robotics.<br />
-
-				By leveraging Deep Reinforcement Learning and Imitation Learning, my aim is to develop autonomous intelligent agents. My work also extends to bio-inspired systems and interdisciplinary applications of deep learning.<br />
+				I am a tenured assistant professor at <a href="https://www.tilburguniversity.edu/about/schools/tshd/departments/dis">Tilburg University</a> and co-director of the AI for Robotics Lab (<a href="http://airlab-tilburg.github.io">AIR-Lab</a>).<br />
+				I work on active perception and imitation learning for humanoid robots, with a background in deep reinforcement learning, simulation, and robot hardware.<br />
 			</p>
+
+            <span class="section-label">Selected Work</span>
+                <ul type="square">
+                  <li><b>TAVIS</b> (2026). A benchmark for active vision in imitation learning, where the policy also decides where the robot looks. Two humanoid torsos in IsaacLab, 2,200 teleoperated demonstrations, Diffusion Policy and &pi;<sub>0</sub> baselines, and a metric to measure gaze-hand anticipation.
+                      <a href="https://arxiv.org/abs/2605.07943">arXiv</a> &middot; <a href="https://github.com/spiglerg/tavis">code</a> &middot; <a href="https://huggingface.co/tavis-benchmark">data and checkpoints</a></li>
+                  <li><b>POUCH</b> (2026). An object-centric memory for visuomotor policies that tracks objects through occlusion, including objects moving inside containers, and conditions a Diffusion Policy on them. Evaluated in simulation and on Reachy 2, with the University of Modena and Reggio Emilia.
+                      <a href="https://github.com/williamraccagni/pouch">code</a></li>
+                  <li><b>Reachy 2 at AIR-Lab</b>. Our humanoid platform, with a Quest 3 teleoperation interface that records directly into LeRobot datasets, on the real robot and in simulation. A variant of the same code collected the TAVIS demonstrations.
+                      <a href="https://github.com/spiglerg/reachy2_quest_teleop">code</a> &middot; <a href="https://www.linkedin.com/feed/update/urn:li:activity:7502661013230690304/">video</a></li>
+                  <li><b>Proximal Policy Distillation</b> (TMLR 2025). Policy distillation for PPO-style agents, with an implementation for Stable-Baselines3.
+                      <a href="https://openreview.net/forum?id=WfVXe88oMh">paper</a> &middot; <a href="https://github.com/spiglerg/sb3_distill">code</a></li>
+                  <li><b>Tilburg Hand</b>. A low-cost dexterous robot hand I designed and built, presented at the ICRA 2023 workshop on open-source manipulation ecosystems.
+                      <a href="https://www.tilburg-robotics.eu">Tilburg Robotics</a></li>
+                  <li><b>Flatland-RL</b>. Co-author of the multi-agent RL benchmark for train scheduling used in the NeurIPS 2020 Flatland competition, built at AIcrowd with SBB.
+                      <a href="https://arxiv.org/abs/2012.05893">arXiv</a></li>
+		</ul>
 
             <span class="section-label">Current Position</span>
                 <ul type="square">
-                  <li>(January 2022 - current) Tenured <b>Assistant Professor (UD1)</b> in Artificial Intelligence at the Department of Intelligent Systems of <b>Tilburg University</b>.<br />
+                  <li>(January 2022 - current) Tenured <b>Assistant Professor</b> in Artificial Intelligence at the Department of Intelligent Systems of <b>Tilburg University</b>.<br />
 			Co-director of the <b>AI for Robotics Lab</b> (<b><a href="http://airlab-tilburg.github.io">AIR-Lab</a></b>) and of the <b><a href="https://www.mind-labs.eu">MindLabs</a> Robotics & Avatars Lab</b>.</li>
-                  <li>(2019 - current) Research fellow at <a href="http://www.siks.nl">Siks</a>.</li>
-                  <li>(2019 - current) Mentor at <a href="https://leadthefuture.tech">LeadTheFuture</a>, italian network of excellence in STEM fields.</li>
+                  <li>Research fellow at <a href="http://www.siks.nl">SIKS</a>; mentor at <a href="https://leadthefuture.tech">LeadTheFuture</a>.</li>
 		</ul>
 
 
             <span class="section-label">Invited Talks</span>
                 <ul type="square">
-                    <li><u>Building the ChatGPT of Robotics Requires Physical Intelligence,</u> invited talk at the "International Conference of Physics Students" ICPS, Rabat, Morocco. August 2026.</li>
-                    <li><u>Deep Reinforcement Learning in Robotics: Bridging the Gap between Simulation and Real-world Applications,</u> invited talk at the "Contributions to Control Systems" seminar series, Institute of Automatic Control, RWTH Aachen University, Aachen, Germany. May 2024.</li>
-                    <li><u>Sim2Real: bridging the gap between simulation and real world physics for robot learning,</u> Pre-PLANCKS Morocco 2024, University of Moulay Ismail, Meknes, Morocco. March 2024.</li>
-                    <li><u>AI revolution & Robotics: towards highly-autonomous agricultural robots,</u> one-day symposium "Agricultural Resources, Leadership and Artificial Intelligence" organized at the Italian Embassy, Den Haag, The Netherlands. October 24th, 2023.</li>
-                    <li><u>End-to-end robot learning and the Tilburg Hand,</u> TAISIG Talks 15, Tilburg, The Netherlands (<a href="https://www.youtube.com/watch?v=J0d-ZqLUuRo">Video</a>). August 2022.</li>
-                    <li><u>Deep Learning and Artificial Intelligence for Bioinformatics, Healthcare, and Protein Folding,</u> 1st Synthetic Biology Conference (SynBio) in Nicosia, Cyprus, organized by the University of Nicosia, the Institute of Neurology and Genetics, the European University and the University of Cyprus. March 2019.</li>
+                    <li><u>Building the ChatGPT of Robotics Requires Physical Intelligence,</u> plenary talk at the International Conference of Physics Students (ICPS), Rabat, Morocco. August 2026.</li>
+                    <li><u>Deep Reinforcement Learning in Robotics: Bridging the Gap between Simulation and Real-world Applications,</u> "Contributions to Control Systems" seminar series, Institute of Automatic Control, RWTH Aachen University, Germany. May 2024.</li>
+                    <li><u>AI revolution & Robotics: towards highly-autonomous agricultural robots,</u> symposium "Agricultural Resources, Leadership and Artificial Intelligence", Italian Embassy, Den Haag, The Netherlands. October 2023.</li>
+                    <li><u>End-to-end robot learning and the Tilburg Hand,</u> TAISIG Talks 15, Tilburg, The Netherlands (<a href="https://www.youtube.com/watch?v=J0d-ZqLUuRo">video</a>). August 2022.</li>
                 </ul>
 
 
@@ -73,8 +85,10 @@
 		<footer>
     		<ul>
         		<li>e-mail: g.spigler&lt;at&gt;tilburguniversity&lt;dot&gt;edu</li>
-    			<li><a href="https://scholar.google.it/citations?user=kSvvHKoAAAAJ">Google Scholar</a></li>
+    			<li><a href="https://scholar.google.com/citations?user=kSvvHKoAAAAJ">Google Scholar</a></li>
         		<li><a href="https://github.com/spiglerg">GitHub</a></li>
+        		<li><a href="https://arxiv.org/search/?query=Spigler%2C+Giacomo&searchtype=author">arXiv</a></li>
+        		<li><a href="https://www.linkedin.com/in/spiglerg/">LinkedIn</a></li>
 			</ul>
 		</footer>
 
