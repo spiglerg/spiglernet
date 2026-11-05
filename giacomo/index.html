@@ -44,18 +44,18 @@
 
             <p class="intro">
 				I am a tenured assistant professor at <a href="https://www.tilburguniversity.edu/about/schools/tshd/departments/dis">Tilburg University</a> and co-director of the AI for Robotics Lab (<a href="http://airlab-tilburg.github.io">AIR-Lab</a>).<br />
-				I work on active perception and imitation learning for humanoid robots, with a background in deep reinforcement learning, simulation, and robot hardware.<br />
+				I work on robot learning, mainly imitation learning, reinforcement learning and active perception, with a focus on humanoid robots. I develop most of my own research code, and I build robots on the side.<br />
 			</p>
 
             <span class="section-label">Selected Work</span>
                 <ul type="square">
-                  <li><b>TAVIS</b> (2026). A benchmark for active vision in imitation learning, where the policy also decides where the robot looks. Two humanoid torsos in IsaacLab, 2,200 teleoperated demonstrations, Diffusion Policy and &pi;<sub>0</sub> baselines, and a metric to measure gaze-hand anticipation.
+                  <li><b>TAVIS</b> (2026). A benchmark for active vision in imitation learning, where the policy also decides where the robot looks. Two humanoid torsos in IsaacLab, 2,200 VR-teleoperated demonstrations, Diffusion Policy and &pi;<sub>0</sub> (VLA) baselines, in- and out-of-distribution evaluation splits, and a metric to measure gaze-hand anticipation.
                       <a href="https://arxiv.org/abs/2605.07943">arXiv</a> &middot; <a href="https://tavis-benchmark.org/">website</a> &middot; <a href="https://github.com/spiglerg/tavis">code</a> &middot; <a href="https://huggingface.co/tavis-benchmark">data and checkpoints</a></li>
-                  <li><b>POUCH</b> (2026). An object-centric memory for visuomotor policies that tracks objects through occlusion, including objects moving inside containers, and conditions a Diffusion Policy on them. Evaluated in simulation and on Reachy 2, with the University of Modena and Reggio Emilia.
+                  <li><b>POUCH</b> (2026). An object-centric memory for visuomotor policies that tracks objects through occlusion, including objects carried inside moving containers, and conditions a Diffusion Policy through an object-centric set transformer. Built on GroundingDINO and SAM2, and evaluated in simulation and on Reachy 2, with the University of Modena and Reggio Emilia.
                       <a href="https://github.com/williamraccagni/pouch">code</a></li>
                   <li><b>Reachy 2 at AIR-Lab</b>. Our humanoid platform, with a custom-made Quest 3 teleoperation interface that records directly into LeRobot datasets, on the real robot and in simulation.
                       <a href="https://github.com/spiglerg/reachy2_quest_teleop">code</a> &middot; <a href="https://www.linkedin.com/feed/update/urn:li:activity:7502661013230690304/">video</a></li>
-                  <li><b>Proximal Policy Distillation</b> (TMLR 2025). Policy distillation for PPO-style agents, with an implementation for Stable-Baselines3.
+                  <li><b>Proximal Policy Distillation</b> (TMLR 2025). A policy distillation method built on PPO, in which the student keeps learning from reward while being distilled and can outperform its teacher. Implementation for Stable-Baselines3.
                       <a href="https://openreview.net/forum?id=WfVXe88oMh">paper</a> &middot; <a href="https://github.com/spiglerg/sb3_distill">code</a></li>
                   <li><b>Tilburg Hand</b>. A low-cost dexterous robot hand I designed and built, presented at the ICRA 2023 workshop on open-source manipulation ecosystems.
                       <a href="https://www.tilburg-robotics.eu">Tilburg Robotics</a></li>
@@ -77,6 +77,14 @@
                     <li><u>Deep Reinforcement Learning in Robotics: Bridging the Gap between Simulation and Real-world Applications,</u> "Contributions to Control Systems" seminar series, Institute of Automatic Control, RWTH Aachen University, Germany. May 2024.</li>
                     <li><u>AI revolution & Robotics: towards highly-autonomous agricultural robots,</u> symposium "Agricultural Resources, Leadership and Artificial Intelligence", Italian Embassy, Den Haag, The Netherlands. October 2023.</li>
                     <li><u>End-to-end robot learning and the Tilburg Hand,</u> TAISIG Talks 15, Tilburg, The Netherlands. August 2022.</li>
+                </ul>
+
+
+            <span class="section-label">Service</span>
+                <ul type="square">
+                    <li>Area Chair, CoRL 2026. Top Reviewer, NeurIPS 2026.</li>
+                    <li>Organizer of <a href="https://www.benerl.org/workshop/2026-tilburg">BeNeRL 2026</a>, the Belgium-Netherlands Workshop on Reinforcement Learning, with Marija Popovi&#263;.</li>
+                    <li>Organizer of the <a href="https://ai4robotics.eu/">AI for Robotics Workshop 2024</a>, with Murat Kirtay.</li>
                 </ul>
 
 
